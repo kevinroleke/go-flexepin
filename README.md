@@ -55,7 +55,7 @@ GetTransactionsByDateRange(startDate time.Time, endDate time.Time) (Transactions
 
 ```go
 GetStoresByCountry(country string) (StoreRes, error)
-GetStoresByRange(lng string, lat string, kmRange string) (StoreRes) // kmRange = radius in kilometers 
+GetStoresByRange(lng string, lat string, kmRange string) (StoreRes, error) // kmRange = radius in kilometers 
 ```
 
 # Types
