@@ -5,6 +5,7 @@ A Golang wrapper for the Flexepin Merchant API.
 # Usage
 
 ```go
+import "log"
 import "github.com/kevinroleke/go-flexepin"
 
 func main() {
