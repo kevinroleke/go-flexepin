@@ -47,7 +47,7 @@ func (conf *Flexepin) Validate(pin string) (ValidateRes, error) {
 	if err != nil {
 		return ValidateRes{}, err
 	}
-
+	log.Println(res)
 	var response ValidateRes 
 	err = json.Unmarshal([]byte(res), &response)
 	if err != nil {
