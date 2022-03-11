@@ -26,7 +26,7 @@ type ValidateRes struct {
 	TransactionNumber string `json:"trans_no"`
 	Serial string `json:"serial"`
 	Value int `json:"value"`
-	Cost int `json:"cost"`
+	Cost float64 `json:"cost"`
 	ResidualValue int `json:"residual_value"`
 	Status string `json:"status"`
 	Currency string `json:"currency"`
@@ -41,7 +41,7 @@ type RedeemRes struct {
 	TransactionNumber string `json:"trans_no"`
 	Serial string `json:"serial"`
 	Value int `json:"value"`
-	Cost int `json:"cost"`
+	Cost float64 `json:"cost"`
 	ResidualValue int `json:"residual_value"`
 	Status string `json:"status"`
 	Currency string `json:"currency"`
@@ -56,7 +56,7 @@ type Transaction struct {
 	TransactionId string `json:"transaction_id"`
 	Serial string `json:"serial"`
 	Value int `json:"value"`
-	Cost int `json:"cost"`
+	Cost float64 `json:"cost"`
 	Status string `json:"status"`
 	Currency string `json:"currency"`
 	Description string `json:"description"`
